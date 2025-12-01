@@ -10,16 +10,16 @@ const app = express();
 app.use(express.json());
 
 //Middleware to handle CORS POLICY
-// Allow all origins with a default of CORS(*)
-// app.use(cors());
+
+app.use(cors());  // Allow all origins with a default of CORS(*)
 
 // allowing custom origins
-app.use(
-  cors({
-    origin: ['http://localhost:3000', 'https://your-frontend-domain.com'],
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
-    allowedHeaders: ['Content-Type']
-  }));
+// app.use(
+//   cors({
+//     origin: ['http://localhost:3000', 'https://your-frontend-domain.com'],
+//     methods: ['GET', 'POST', 'PUT', 'DELETE'],
+//     allowedHeaders: ['Content-Type']
+//   }));
 
 app.get('/', (req, res) => {
   console.log(req)
