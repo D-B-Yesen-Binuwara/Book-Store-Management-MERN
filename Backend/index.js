@@ -1,19 +1,18 @@
 import express from 'express';
 import { port, mongoDBURL } from './config.js';
 import mongoose from 'mongoose';
-import {Book} from './models/bookModel.js';
 import booksRoute from './routes/booksRoute.js';
 import cors from 'cors';
+
 const app = express();
 
-//middleware to parse JSON
+
 app.use(express.json());
 
-//Middleware to handle CORS POLICY
 
-app.use(cors());  // Allow all origins with a default of CORS(*)
+app.use(cors());
 
-// allowing custom origins
+// Custom CORS configuration
 // app.use(
 //   cors({
 //     origin: ['http://localhost:3000', 'https://your-frontend-domain.com'],
@@ -21,12 +20,14 @@ app.use(cors());  // Allow all origins with a default of CORS(*)
 //     allowedHeaders: ['Content-Type']
 //   }));
 
+
 app.get('/', (req, res) => {
-  console.log(req)
-  return res.status(234).send('Hello World');
+  return res.status(200).send('Book Store API is running!');
 });
 
+
 app.use('/books', booksRoute);
+
 
 mongoose.connect(mongoDBURL)
   .then(() => {

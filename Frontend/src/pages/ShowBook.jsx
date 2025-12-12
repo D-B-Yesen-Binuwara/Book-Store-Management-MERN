@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import BackButton from '../components/BackButton';
@@ -36,7 +36,7 @@ const ShowBook = () => {
                     </div>
                     <div className='my-4'>
                         <span className='text-xl mr-4 text-gray-500'>Author</span>
-                        <span>{book.Author}</span>
+                        <span>{book.author}</span>
                     </div>
                     <div className='my-4'>
                         <span className='text-xl mr-4 text-gray-500'>Publish Year</span>
