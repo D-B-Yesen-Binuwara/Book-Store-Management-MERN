@@ -2,7 +2,7 @@
 
 A full-stack MERN (MongoDB, Express, React, Node.js) web application for managing a book store. This application allows users to create, read, update, and delete books in an interactive and user-friendly interface.
 
-## ✨ Features
+## Features
 
 - **Create Books**: Add new books to the store with title, author, and publish year
 - **View All Books**: Display all books in a sorted list (newest first)
@@ -13,7 +13,7 @@ A full-stack MERN (MongoDB, Express, React, Node.js) web application for managin
 - **Real-time Notifications**: User feedback with toast notifications
 - **Error Handling**: Comprehensive error handling on both frontend and backend
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 Book-Store-Management/
@@ -52,7 +52,7 @@ Book-Store-Management/
     └── postcss.config.js      # PostCSS configuration
 ```
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Backend
 - **Node.js**: JavaScript runtime
@@ -71,7 +71,7 @@ Book-Store-Management/
 - **Notistack**: Toast notification library
 - **React Icons**: Icon library
 
-## 🚀 Installation
+## Installation
 
 ### 1. Clone the Repository
 ```bash
@@ -91,7 +91,7 @@ cd ../Frontend
 npm install
 ```
 
-## ⚙️ Configuration
+## Configuration
 
 ### Backend Configuration
 
@@ -111,7 +111,7 @@ MONGO_DB_URL=mongodb+srv://<username>:<password>@<cluster>.mongodb.net/<database
 
 The frontend is pre-configured to connect to the backend at `http://localhost:5000`. Ensure the backend server is running before starting the frontend.
 
-## 📡 API Endpoints
+## API Endpoints
 
 All API endpoints are prefixed with `/books`
 
